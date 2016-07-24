@@ -10,7 +10,7 @@ namespace Appium.Net.Sandbox
     [TestFixture]
     public class MainRunner
     {
-        public IWebDriver D;
+        public IWebDriver Driver;
 
         [OneTimeSetUp]
         public void SetUp()
@@ -23,7 +23,7 @@ namespace Appium.Net.Sandbox
             capabilities.SetCapability("app", "com.instagram.android");
             capabilities.SetCapability("appActivity", "com.instagram.android.activity.MainTabActivity");
 
-            D = new RemoteWebDriver(
+            Driver = new RemoteWebDriver(
                 new Uri("http://192.168.1.101:4723/wd/hub"), capabilities, TimeSpan.FromSeconds(30));
             
         }
@@ -31,30 +31,16 @@ namespace Appium.Net.Sandbox
         [Test]
         public void Check()
         {
-            D.OpenProfile();
-            var els = D.FindElements(By.ClassName("android.widget.ImageView"))
-                .Where(e => e.GetAttribute("name").Contains("Миниатюра")).ToList();
-            Console.WriteLine("els: " + els.Count);
-            foreach (var el in els)
-            {
-                try
-                {
-                    Console.WriteLine("e tag: " + el.TagName);
-                    Console.WriteLine("e text: " + el.Text);
-                    Console.WriteLine("e name: " + el.GetAttribute("name"));
-                }
-                catch (Exception)
-                {
-                    
-                }
-            }
-
+            Driver
+                .OpenProfile()
+                .OpenPhoto(1, 3)
+                .GoBack();
         }
 
         [OneTimeTearDown]
         public void End()
         {
-            D.Dispose();
+            Driver.Dispose();
         }
     }
 }

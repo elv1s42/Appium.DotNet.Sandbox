@@ -66,6 +66,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainRunner.cs" />
+    <Compile Include="Pages\PhotoPageActions.cs" />
+    <Compile Include="Pages\ProfilePageActions.cs" />
     <Compile Include="Pages\HomePageActions.cs" />
     <Compile Include="TestAppium.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

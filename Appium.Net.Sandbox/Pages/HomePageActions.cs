@@ -4,10 +4,11 @@ namespace Appium.Net.Sandbox.Pages
 {
     public static class HomePageActions
     {
-        public static void OpenProfile(this IWebDriver d)
+        public static IWebDriver OpenProfile(this IWebDriver d)
         {
             var panel = d.FindElement(By.Id("android:id/tabs"));
-            panel.FindElement(By.Name("Профиль")).Click();
+            panel.FindElement(By.Name("Profile")).Click();
+            return d;
         }
     }
 }
