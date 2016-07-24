@@ -1,14 +1,17 @@
-﻿using OpenQA.Selenium;
+﻿using Appium.Net.Sandbox.Utils;
+using OpenQA.Selenium;
 
 namespace Appium.Net.Sandbox.Pages
 {
     public static class HomePageActions
     {
-        public static IWebDriver OpenProfile(this IWebDriver d)
+        public static IWebDriver OpenProfile(this IWebDriver driver)
         {
-            var panel = d.FindElement(By.Id("android:id/tabs"));
-            panel.FindElement(By.Name("Profile")).Click();
-            return d;
+            return driver.DefaultAction("Opening profile...", () =>
+            {
+                var panel = driver.FindElement(By.Id("android:id/tabs"));
+                panel.FindElement(By.Name("Profile")).Click();
+            });
         }
     }
 }
