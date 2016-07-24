@@ -21,7 +21,8 @@ namespace Appium.Net.Sandbox
             capabilities.SetCapability("platformName", "Android");
             capabilities.SetCapability("platformVersion", "6.0 Marshmallow");
             capabilities.SetCapability("app", "com.instagram.android");
-            capabilities.SetCapability("appActivity", "com.instagram.android.activity.MainTabActivity");
+            capabilities.SetCapability("appActivity", "com.instagram.android.activity.MainTabActivity"); 
+            capabilities.SetCapability("unicodeKeyboard", "true");
 
             Driver = new RemoteWebDriver(
                 new Uri("http://192.168.1.101:4723/wd/hub"), capabilities, TimeSpan.FromSeconds(30));
@@ -31,9 +32,20 @@ namespace Appium.Net.Sandbox
         [Test]
         public void Check()
         {
+            string hashs;
             Driver
                 .OpenProfile()
-                .OpenPhoto(1, 3)
+                .OpenPhoto(1, 1)
+                .EditPhoto()
+                .ClearHashtags(out hashs)
+                .SaveEditing()
+                .GoBack()
+                .OpenPhoto(1, 1)
+                .EditPhoto()
+                .SetHashtags(hashs)
+                //.SetHashtags("#закат #питер #санктпетербург #спб")
+                //.SetHashtags("123")
+                .SaveEditing()
                 .GoBack();
         }
 
