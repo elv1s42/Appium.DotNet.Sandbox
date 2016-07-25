@@ -4,12 +4,13 @@ using System.Threading;
 using Appium.Net.Sandbox.Utils;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium.Interfaces;
+using OpenQA.Selenium.Remote;
 
 namespace Appium.Net.Sandbox.Pages
 {
     public static class PhotoPageActions
     {
-        public static IWebDriver GoBack(this IWebDriver d)
+        public static RemoteWebDriver GoBack(this RemoteWebDriver d)
         {
             return d.DefaultAction("Going back...", () =>
             {
@@ -18,7 +19,7 @@ namespace Appium.Net.Sandbox.Pages
             });
         }
 
-        public static IWebDriver ClickParameters(this IWebDriver d)
+        public static RemoteWebDriver ClickParameters(this RemoteWebDriver d)
         {
             return d.DefaultAction("Opening parameters...", () =>
             {
@@ -27,7 +28,7 @@ namespace Appium.Net.Sandbox.Pages
             });
         }
 
-        public static IWebDriver ClickEdit(this IWebDriver d)
+        public static RemoteWebDriver ClickEdit(this RemoteWebDriver d)
         {
             return d.DefaultAction("Clicking Edit...", () =>
             {
@@ -37,12 +38,12 @@ namespace Appium.Net.Sandbox.Pages
             });
         }
 
-        public static IWebDriver EditPhoto(this IWebDriver d)
+        public static RemoteWebDriver EditPhoto(this RemoteWebDriver d)
         {
             return d.ClickParameters().ClickEdit();
         }
 
-        public static IWebDriver ClearHashtags(this IWebDriver d, out string hashs)
+        public static RemoteWebDriver ClearHashtags(this RemoteWebDriver d, out string hashs)
         {
             var t = d.FindElement(By.Id("com.instagram.android:id/edit_media_caption"))
                    .Text;
@@ -53,7 +54,7 @@ namespace Appium.Net.Sandbox.Pages
             });
         }
 
-        public static IWebDriver SetHashtags(this IWebDriver d, string hashs)
+        public static RemoteWebDriver SetHashtags(this RemoteWebDriver d, string hashs)
         {
             return d.DefaultAction($"Setting hashtags: '{hashs}'...", () =>
             {
@@ -67,7 +68,7 @@ namespace Appium.Net.Sandbox.Pages
             });
         }
 
-        public static IWebDriver CloseEditing(this IWebDriver d)
+        public static RemoteWebDriver CloseEditing(this RemoteWebDriver d)
         {
             return d.DefaultAction("Closing Edit...", () =>
             {
@@ -76,7 +77,7 @@ namespace Appium.Net.Sandbox.Pages
             });
         }
 
-        public static IWebDriver SaveEditing(this IWebDriver d)
+        public static RemoteWebDriver SaveEditing(this RemoteWebDriver d)
         {
             return d.DefaultAction("Saving Edit...", () =>
             {
