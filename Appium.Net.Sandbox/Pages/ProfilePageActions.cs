@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading;
+﻿using System.Linq;
 using Appium.Net.Sandbox.Utils;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Interactions.Internal;
 using OpenQA.Selenium.Remote;
 
 namespace Appium.Net.Sandbox.Pages
@@ -23,13 +17,9 @@ namespace Appium.Net.Sandbox.Pages
                     .First(e => e.GetAttribute("name")
                         .Contains($"Photo Thumbnail at Row {row}, Column {column}"))
                     .Click();
-            }, " Done.", 5, () =>
+            }, " Done.", 25, () =>
             {
-                var ad = new AndroidDriver<AppiumWebElement>(
-                    new Uri("http://192.168.1.101:4723/wd/hub"), 
-                    MainRunner.DesiredCapabilities, TimeSpan.FromSeconds(30));
-
-                ad.ScrollTo($"Photo Thumbnail at Row {row}, Column {column}");
+                ((AndroidDriver<AppiumWebElement>)d).Swipe(100, 750, 100, 100, 1000);
             });
         }
     }

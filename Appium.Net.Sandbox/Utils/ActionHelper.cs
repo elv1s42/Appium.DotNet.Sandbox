@@ -25,6 +25,7 @@ namespace Appium.Net.Sandbox.Utils
                     retryAction?.Invoke();
                 }
             }
+            ConsoleLogger.Finish(" Failed!");
             return d;
         }
     }
