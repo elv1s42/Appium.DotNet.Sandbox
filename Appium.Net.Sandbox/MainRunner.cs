@@ -41,22 +41,31 @@ namespace Appium.Net.Sandbox
 
         public static void ResetAllHashs(int row, int column)
         {
-            ConsoleLogger.Write($"Updating photo: row={row}, column={column}");
-            SetUp();
-            string hashs;
-            Driver
-                .OpenProfile()
-                .OpenPhoto(row, column)
-                .EditPhoto()
-                .ClearHashtags(out hashs)
-                .SaveEditing()
-                .GoBack()
-                .OpenPhoto(row, column)
-                .EditPhoto()
-                .SetHashtags(hashs)
-                .SaveEditing()
-                .GoBack();
-            End();
+            try
+            {
+                ConsoleLogger.Write($"Updating photo: row={row}, column={column}");
+                SetUp();
+                string hashs;
+                Driver
+                    .OpenProfile()
+                    .OpenPhoto(row, column)
+                    .EditPhoto()
+                    .ClearHashtags(out hashs)
+                    .SaveEditing()
+                    .GoBack()
+                    .OpenPhoto(row, column)
+                    .EditPhoto()
+                    .SetHashtags(hashs)
+                    .SaveEditing()
+                    .GoBack();
+                End();
+            }
+            catch (Exception e)
+            {
+                ConsoleLogger.Message("Error for Resetting hashs!!!");
+                ConsoleLogger.Message(e.Message);
+                ConsoleLogger.Message(e.StackTrace);
+            }
         }
     }
 }
