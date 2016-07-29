@@ -64,6 +64,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="EmulatorRunner.cs" />
     <Compile Include="MainRunner.cs" />
     <Compile Include="Pages\PhotoPageActions.cs" />
     <Compile Include="Pages\ProfilePageActions.cs" />
