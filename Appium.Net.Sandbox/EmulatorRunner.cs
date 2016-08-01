@@ -1,6 +1,7 @@
 ﻿using System;
 using Appium.Net.Sandbox.Pages;
 using Appium.Net.Sandbox.Utils;
+using NUnit.Framework;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Remote;
@@ -20,7 +21,7 @@ namespace Appium.Net.Sandbox
                 capabilities.SetCapability("deviceName", "Nexus 5");
                 capabilities.SetCapability("platformName", "Android");
                 capabilities.SetCapability("platformVersion", "6.0 Marshmallow");
-                capabilities.SetCapability("app", "com.instagram.android");
+                capabilities.SetCapability("app", "com.instagram.android.apk");
                 capabilities.SetCapability("appActivity", "com.instagram.android.activity.MainTabActivity");
                 capabilities.SetCapability("unicodeKeyboard", "true");
                 return capabilities;
@@ -39,6 +40,7 @@ namespace Appium.Net.Sandbox
             Driver.Dispose();
         }
 
+        [TestCase(1, 1)]
         public static void ResetAllHashs(int row, int column)
         {
             try
