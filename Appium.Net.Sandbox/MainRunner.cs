@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Configuration;
 using Appium.Net.Sandbox.Pages;
 using Appium.Net.Sandbox.Utils;
+using Castle.DynamicProxy.Generators.Emitters;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Remote;
@@ -29,9 +31,8 @@ namespace Appium.Net.Sandbox
 
         public static void SetUp()
         {
-            Driver = new AndroidDriver<AppiumWebElement>(
-                       new Uri("http://192.168.1.101:4723/wd/hub"),
-                       DesiredCapabilities, TimeSpan.FromSeconds(30));
+            var url = Properties.App.Default.Url;
+            Driver = new AndroidDriver<AppiumWebElement>(new Uri(url), DesiredCapabilities, TimeSpan.FromSeconds(30));
         }
 
         public static void End()
