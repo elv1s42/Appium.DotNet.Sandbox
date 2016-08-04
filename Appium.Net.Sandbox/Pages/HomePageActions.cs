@@ -11,7 +11,9 @@ namespace Appium.Net.Sandbox.Pages
             return driver.DefaultAction("Opening profile...", () =>
             {
                 var panel = driver.FindElement(By.Id("android:id/tabs"));
-                panel.FindElement(By.Name("Profile")).Click();
+                var el = panel.FindElement(By.Name("Profile"));
+
+                el.Click();
             });
         }
     }

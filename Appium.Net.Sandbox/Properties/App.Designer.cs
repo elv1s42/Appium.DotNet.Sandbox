@@ -25,7 +25,7 @@ namespace Appium.Net.Sandbox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.1.100:4723/wd/hub")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.1.101:4723/wd/hub")]
         public string Url {
             get {
                 return ((string)(this["Url"]));

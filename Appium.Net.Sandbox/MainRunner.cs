@@ -25,6 +25,9 @@ namespace Appium.Net.Sandbox
                 capabilities.SetCapability("app", "com.instagram.android");
                 capabilities.SetCapability("appActivity", "com.instagram.android.activity.MainTabActivity");
                 capabilities.SetCapability("unicodeKeyboard", "true");
+
+                capabilities.SetCapability("ignoreUnimportantViews", true);
+                capabilities.SetCapability("disableAndroidWatchers", true);
                 return capabilities;
             }
         }
