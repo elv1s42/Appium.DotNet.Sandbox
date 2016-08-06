@@ -46,7 +46,7 @@ namespace Appium.Net.Sandbox
             Driver.Dispose();
         }
 
-        [TestCase(1, 1)]
+        [TestCase(10, 1)]
         public static void ResetAllHashs(int row, int column)
         {
             ConsoleLogger.Write($"Updating photo: row={row}, column={column}");

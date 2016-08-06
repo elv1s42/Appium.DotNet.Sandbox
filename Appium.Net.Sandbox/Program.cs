@@ -24,11 +24,26 @@ namespace Appium.Net.Sandbox
                     Write("You've entered some shit, taking number = 1");
                     number = 1;
                 }
-                for (var i = 0; i < number; i++)
+                Write("Enter number to repeat:");
+                var repeat = Get() ?? "1";
+                int r;
+                try
                 {
-                    var row = 1 + i/3;
-                    var column = 1 + i%3;
-                    MainRunner.ResetAllHashs(row, column);
+                    r = int.Parse(repeat);
+                }
+                catch (Exception)
+                {
+                    Write("You've entered some shit, taking number = 1");
+                    r = 1;
+                }
+                for (var j = 0; j < r; j++)
+                {
+                    for (var i = 0; i < number; i++)
+                    {
+                        var row = 1 + i/3;
+                        var column = 1 + i%3;
+                        MainRunner.ResetAllHashs(row, column);
+                    }
                 }
                 Write("Continue ? (y/n)");
                 flag = Get() ?? yes;
