@@ -71,6 +71,64 @@ namespace Appium.Net.Sandbox
                 ConsoleLogger.Message(e.StackTrace);
             }
         }
+
+        public static void AddTemplateHashs(int row, int column, string tempHashs)
+        {
+            try
+            {
+                ConsoleLogger.Write($"Updating photo: row={row}, column={column}");
+                SetUp();
+                string hashs;
+                Driver
+                    .OpenProfile()
+                    .OpenPhoto(row, column)
+                    .EditPhoto()
+                    .ClearHashtags(out hashs)
+                    .SaveEditing()
+                    .GoBack()
+                    .OpenPhoto(row, column)
+                    .EditPhoto()
+                    .SetHashtags(hashs)
+                    .SaveEditing()
+                    .GoBack();
+                End();
+            }
+            catch (Exception e)
+            {
+                ConsoleLogger.Message("Error for Resetting hashs!!!");
+                ConsoleLogger.Message(e.Message);
+                ConsoleLogger.Message(e.StackTrace);
+            }
+        }
+
+        public static void RemoveTemplateHashs(int row, int column, string tempHashs)
+        {
+            try
+            {
+                ConsoleLogger.Write($"Updating photo: row={row}, column={column}");
+                SetUp();
+                string hashs;
+                Driver
+                    .OpenProfile()
+                    .OpenPhoto(row, column)
+                    .EditPhoto()
+                    .ClearHashtags(out hashs)
+                    .SaveEditing()
+                    .GoBack()
+                    .OpenPhoto(row, column)
+                    .EditPhoto()
+                    .SetHashtags(hashs)
+                    .SaveEditing()
+                    .GoBack();
+                End();
+            }
+            catch (Exception e)
+            {
+                ConsoleLogger.Message("Error for Resetting hashs!!!");
+                ConsoleLogger.Message(e.Message);
+                ConsoleLogger.Message(e.StackTrace);
+            }
+        }
     }
 }
 

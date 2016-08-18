@@ -31,5 +31,14 @@ namespace Appium.Net.Sandbox.Properties {
                 return ((string)(this["Url"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("#test, #test1, #test2")]
+        public string TempHashs {
+            get {
+                return ((string)(this["TempHashs"]));
+            }
+        }
     }
 }

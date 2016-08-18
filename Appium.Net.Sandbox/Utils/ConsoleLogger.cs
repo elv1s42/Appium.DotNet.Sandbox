@@ -4,7 +4,7 @@ namespace Appium.Net.Sandbox.Utils
 {
     public static class ConsoleLogger
     {
-        public static string Get()
+        public static string Read()
         {
             return Console.ReadLine();
         }
