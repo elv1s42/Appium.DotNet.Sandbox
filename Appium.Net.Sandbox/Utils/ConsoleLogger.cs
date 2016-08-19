@@ -9,6 +9,22 @@ namespace Appium.Net.Sandbox.Utils
             return Console.ReadLine();
         }
 
+        public static int ReadInt()
+        {
+            var res = Read() ?? "1";
+            int number;
+            try
+            {
+                number = int.Parse(res);
+            }
+            catch (Exception)
+            {
+                Write("You've entered some shit, taking number = 1");
+                number = 1;
+            }
+            return number;
+        }
+
         public static void Clear()
         {
             Console.Clear();

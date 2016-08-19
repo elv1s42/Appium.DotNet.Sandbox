@@ -3,7 +3,6 @@ using System.Linq;
 using System.Threading;
 using Appium.Net.Sandbox.Utils;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Appium.Interfaces;
 using OpenQA.Selenium.Remote;
 
 namespace Appium.Net.Sandbox.Pages
@@ -45,9 +44,16 @@ namespace Appium.Net.Sandbox.Pages
 
         public static RemoteWebDriver ClearHashtags(this RemoteWebDriver d, out string hashs)
         {
-            var t = d.FindElement(By.Id("com.instagram.android:id/edit_media_caption"))
-                   .Text;
-            hashs = t;
+            var retry = 0;
+            hashs = "";
+            while ((hashs == "" || hashs.Contains("Write a caption")) && retry < 10)
+            {
+                var t = d.FindElement(By.Id("com.instagram.android:id/edit_media_caption"))
+                       .Text;
+                hashs = t;
+                retry++;
+            }
+
             return d.DefaultAction($"Clearing hashtags: '{hashs}' ...", () =>
             {
                 d.FindElement(By.Id("com.instagram.android:id/edit_media_caption")).Clear();

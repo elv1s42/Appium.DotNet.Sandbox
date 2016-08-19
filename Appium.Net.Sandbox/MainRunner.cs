@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Configuration;
 using Appium.Net.Sandbox.Pages;
 using Appium.Net.Sandbox.Utils;
-using Castle.DynamicProxy.Generators.Emitters;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Remote;
@@ -88,14 +86,14 @@ namespace Appium.Net.Sandbox
                     .GoBack()
                     .OpenPhoto(row, column)
                     .EditPhoto()
-                    .SetHashtags(hashs)
+                    .SetHashtags(hashs + " " + tempHashs)
                     .SaveEditing()
                     .GoBack();
                 End();
             }
             catch (Exception e)
             {
-                ConsoleLogger.Message("Error for Resetting hashs!!!");
+                ConsoleLogger.Message("Error inside AddTemplateHashs!!!");
                 ConsoleLogger.Message(e.Message);
                 ConsoleLogger.Message(e.StackTrace);
             }
@@ -117,14 +115,14 @@ namespace Appium.Net.Sandbox
                     .GoBack()
                     .OpenPhoto(row, column)
                     .EditPhoto()
-                    .SetHashtags(hashs)
+                    .SetHashtags(hashs.Replace(tempHashs, ""))
                     .SaveEditing()
                     .GoBack();
                 End();
             }
             catch (Exception e)
             {
-                ConsoleLogger.Message("Error for Resetting hashs!!!");
+                ConsoleLogger.Message("Error inside RemoveTemplateHashs!!!");
                 ConsoleLogger.Message(e.Message);
                 ConsoleLogger.Message(e.StackTrace);
             }

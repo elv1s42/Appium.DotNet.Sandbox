@@ -1,5 +1,4 @@
-﻿using System;
-using static Appium.Net.Sandbox.Utils.ConsoleLogger;
+﻿using static Appium.Net.Sandbox.Utils.ConsoleLogger;
 
 namespace Appium.Net.Sandbox
 {
@@ -8,29 +7,9 @@ namespace Appium.Net.Sandbox
         private static void SimpleResetHashs()
         {
             Write("Enter number to udpate:");
-            var res = Read() ?? "1";
-            int number;
-            try
-            {
-                number = int.Parse(res);
-            }
-            catch (Exception)
-            {
-                Write("You've entered some shit, taking number = 1");
-                number = 1;
-            }
+            var number = ReadInt();
             Write("Enter number to repeat:");
-            var repeat = Read() ?? "1";
-            int r;
-            try
-            {
-                r = int.Parse(repeat);
-            }
-            catch (Exception)
-            {
-                Write("You've entered some shit, taking number = 1");
-                r = 1;
-            }
+            var r = ReadInt();
             for (var j = 0; j < r; j++)
             {
                 for (var i = 0; i < number; i++)
@@ -45,17 +24,7 @@ namespace Appium.Net.Sandbox
         private static void AddTemplateHashs()
         {
             Write("Enter number to udpate:");
-            var res = Read() ?? "1";
-            int number;
-            try
-            {
-                number = int.Parse(res);
-            }
-            catch (Exception)
-            {
-                Write("You've entered some shit, taking number = 1");
-                number = 1;
-            }
+            var number = ReadInt();
             for (var i = 0; i < number; i++)
             {
                 var row = 1 + i / 3;
@@ -67,17 +36,7 @@ namespace Appium.Net.Sandbox
         private static void RemoveTemplateHashs()
         {
             Write("Enter number to udpate:");
-            var res = Read() ?? "1";
-            int number;
-            try
-            {
-                number = int.Parse(res);
-            }
-            catch (Exception)
-            {
-                Write("You've entered some shit, taking number = 1");
-                number = 1;
-            }
+            var number = ReadInt();
             for (var i = 0; i < number; i++)
             {
                 var row = 1 + i / 3;

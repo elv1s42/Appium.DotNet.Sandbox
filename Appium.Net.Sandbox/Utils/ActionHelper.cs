@@ -1,5 +1,4 @@
 ﻿using System;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
 namespace Appium.Net.Sandbox.Utils
