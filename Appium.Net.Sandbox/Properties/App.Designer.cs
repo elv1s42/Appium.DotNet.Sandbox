@@ -114,5 +114,18 @@ namespace Appium.Net.Sandbox.Properties {
                 return ((int)(this["Total"]));
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,41,40,39,38,37,36,35,34,33," +
+            "32,31,29,28,27,26,25,24,20,19,18,17,15,14,13,12,11,9,8,6,5,4,3,1")]
+        public string IdsToUpdate {
+            get {
+                return ((string)(this["IdsToUpdate"]));
+            }
+            set {
+                this["IdsToUpdate"] = value;
+            }
+        }
     }
 }

@@ -62,7 +62,7 @@ namespace Appium.Net.Sandbox.Pages
         
         public static RemoteWebDriver SetHashtags(this RemoteWebDriver d, string hashs, string tempHashs = "", int number = 0)
         {
-            return d.DefaultAction($"Setting hashtags: '{hashs}'...", () =>
+            return d.DefaultAction("Setting hashtags ...", () =>
             {
                 if (number != 0)
                 {
@@ -71,7 +71,9 @@ namespace Appium.Net.Sandbox.Pages
                 var e = d.FindElement(By.Id("com.instagram.android:id/edit_media_caption"));
                 e.Click();
                 Thread.Sleep(500);
-                e.SendKeys(tempHashs.Equals("") ? hashs : hashs + " " + tempHashs);
+                var hashsToSet = tempHashs.Equals("") ? hashs : hashs + " " + tempHashs;
+                Console.WriteLine("setting: " + hashsToSet);
+                e.SendKeys(hashsToSet);
                 Thread.Sleep(1000);
                 d.FindElement(By.Id("com.instagram.android:id/action_bar_textview_title")).Click();
             });

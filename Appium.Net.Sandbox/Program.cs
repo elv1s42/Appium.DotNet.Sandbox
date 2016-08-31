@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using static Appium.Net.Sandbox.Utils.ConsoleLogger;
 
 namespace Appium.Net.Sandbox
@@ -7,7 +8,8 @@ namespace Appium.Net.Sandbox
     {
         private static void ValidateData()
         {
-            if (Properties.App.Default.Hashs.Count != Properties.App.Default.Total)
+            if (Properties.App.Default.Hashs.Count != Properties.App.Default.Total 
+                || Properties.App.Default.IdsToUpdate.Split(',').Length != Properties.App.Default.Total)
             {
                 throw new Exception("Wrong data!");
             }
@@ -25,7 +27,13 @@ namespace Appium.Net.Sandbox
                 {
                     var row = 1 + i / 3;
                     var column = 1 + i % 3;
-                    MainRunner.ResetAllHashs(row, column);
+                    var id = Properties.App.Default.Total - (column - 1 + (row - 1) * 3);
+                    if (Properties.App.Default.IdsToUpdate.Split(',')
+                        .Select(x => Convert.ToInt32(x)).Contains(id))
+                    {
+                        Console.WriteLine("id = " + id);
+                        MainRunner.ResetAllHashs(row, column);
+                    }
                 }
             }
         }
@@ -38,7 +46,12 @@ namespace Appium.Net.Sandbox
             {
                 var row = 1 + i / 3;
                 var column = 1 + i % 3;
-                MainRunner.AddTemplateHashs(row, column, Properties.App.Default.TempHashs);
+                var id = column - 1 + (row - 1) * 3 + 1;
+                if (Properties.App.Default.IdsToUpdate.Split(',')
+                    .Select(x => Convert.ToInt32(x)).Contains(id))
+                {
+                    MainRunner.AddTemplateHashs(row, column, Properties.App.Default.TempHashs);
+                }
             }
         }
 
@@ -50,7 +63,12 @@ namespace Appium.Net.Sandbox
             {
                 var row = 1 + i / 3;
                 var column = 1 + i % 3;
-                MainRunner.RemoveTemplateHashs(row, column, Properties.App.Default.TempHashs);
+                var id = column - 1 + (row - 1) * 3 + 1;
+                if (Properties.App.Default.IdsToUpdate.Split(',')
+                    .Select(x => Convert.ToInt32(x)).Contains(id))
+                {
+                    MainRunner.RemoveTemplateHashs(row, column, Properties.App.Default.TempHashs);
+                }
             }
         }
 
