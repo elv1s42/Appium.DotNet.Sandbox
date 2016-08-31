@@ -9,7 +9,7 @@ namespace Appium.Net.Sandbox
         private static void ValidateData()
         {
             if (Properties.App.Default.Hashs.Count != Properties.App.Default.Total 
-                || Properties.App.Default.IdsToUpdate.Split(',').Length != Properties.App.Default.Total)
+                || Properties.App.Default.IdsToUpdate.Split(',').Length > Properties.App.Default.Total)
             {
                 throw new Exception("Wrong data!");
             }
