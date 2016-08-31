@@ -59,18 +59,21 @@ namespace Appium.Net.Sandbox.Pages
                 d.FindElement(By.Id("com.instagram.android:id/edit_media_caption")).Clear();
             });
         }
-
-        public static RemoteWebDriver SetHashtags(this RemoteWebDriver d, string hashs)
+        
+        public static RemoteWebDriver SetHashtags(this RemoteWebDriver d, string hashs, string tempHashs = "", int number = 0)
         {
             return d.DefaultAction($"Setting hashtags: '{hashs}'...", () =>
             {
+                if (number != 0)
+                {
+                    hashs = Properties.App.Default.Hashs[number];
+                }
                 var e = d.FindElement(By.Id("com.instagram.android:id/edit_media_caption"));
                 e.Click();
                 Thread.Sleep(500);
-                e.SendKeys(hashs);
+                e.SendKeys(tempHashs.Equals("") ? hashs : hashs + " " + tempHashs);
                 Thread.Sleep(1000);
                 d.FindElement(By.Id("com.instagram.android:id/action_bar_textview_title")).Click();
-                
             });
         }
 

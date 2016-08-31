@@ -57,7 +57,7 @@ namespace Appium.Net.Sandbox
                     .GoBack()
                     .OpenPhoto(row, column)
                     .EditPhoto()
-                    .SetHashtags(hashs)
+                    .SetHashtags(hashs, "", column - 1 + (row - 1) * 3)
                     .SaveEditing()
                     .GoBack();
                 End();
@@ -86,7 +86,7 @@ namespace Appium.Net.Sandbox
                     .GoBack()
                     .OpenPhoto(row, column)
                     .EditPhoto()
-                    .SetHashtags(hashs + " " + tempHashs)
+                    .SetHashtags(hashs, tempHashs)
                     .SaveEditing()
                     .GoBack();
                 End();
@@ -115,7 +115,7 @@ namespace Appium.Net.Sandbox
                     .GoBack()
                     .OpenPhoto(row, column)
                     .EditPhoto()
-                    .SetHashtags(hashs.Replace(tempHashs, ""))
+                    .SetHashtags(hashs.Replace(" " + tempHashs, ""))
                     .SaveEditing()
                     .GoBack();
                 End();

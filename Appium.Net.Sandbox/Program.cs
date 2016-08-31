@@ -1,9 +1,18 @@
-﻿using static Appium.Net.Sandbox.Utils.ConsoleLogger;
+﻿using System;
+using static Appium.Net.Sandbox.Utils.ConsoleLogger;
 
 namespace Appium.Net.Sandbox
 {
     public class Program
     {
+        private static void ValidateData()
+        {
+            if (Properties.App.Default.Hashs.Count != Properties.App.Default.Total)
+            {
+                throw new Exception("Wrong data!");
+            }
+        }
+
         private static void SimpleResetHashs()
         {
             Write("Enter number to udpate:");
@@ -52,12 +61,12 @@ namespace Appium.Net.Sandbox
             while (flag.Equals("y"))
             {
                 Clear();
+                ValidateData();
                 Write("Hello.");
                 Write("1 - simple reset hashsets");
                 Write("2 - add template hashsets");
                 Write("3 - remove template hashsets");
                 var option = Read() ?? "1";
-
                 switch (option)
                 {
                     case "1":

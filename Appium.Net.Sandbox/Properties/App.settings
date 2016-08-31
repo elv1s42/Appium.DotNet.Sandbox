@@ -6,7 +6,75 @@
       <Value Profile="(Default)">http://192.168.1.101:4723/wd/hub</Value>
     </Setting>
     <Setting Name="TempHashs" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">#love #TagsForLikes #TagsForLikesApp #TFLers #tweegram #photooftheday #20likes #amazing #smile #follow4follow #like4like #look #instalike #igers #picoftheday #food #instadaily #instafollow #followme #girl #iphoneonly #instagood #bestoftheday #instacool #instago #all_shots #follow #webstagram #colorful #style #swag</Value>
+      <Value Profile="(Default)">#love #TagsForLikes #TagsForLikesApp #tweegram #photooftheday #amazing #smile #follow4follow #like4like #look #instalike #food #instadaily #instafollow #followme #instagood #bestoftheday #instacool #instago #follow #webstagram #colorful #style #swag</Value>
+    </Setting>
+    <Setting Name="Hashs" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;#санктпетербург #тучи #закат #небо #спб #питер #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#тучи #закат #небо #спб #питер #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#футбол #мяч #смешнойхэштег1 #смешнойхэштег2 #спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#юсуповский #сад #спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#ботанический #сад #спб #питер #санктпетербург #бонсай #этобонсайничегонезнаю #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#андерсенград #сосновыйбор&lt;/string&gt;
+  &lt;string&gt;#плотина #петяярви #спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#закат #питер #санктпетербург #спб #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#гатчинский #гейзер #просто #супер #спб #санктпетербург #питер #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#закат #питер #санктпетербург #спб #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#закат #питер #санктпетербург #спб #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#спб #питер #лофтпроектэтажи #фестивальенотов #енотики #щенята #енотовидной #собачки #санктпетербург&lt;/string&gt;
+  &lt;string&gt;#спб #санктпетербург #питер #бременскиемузыканты&lt;/string&gt;
+  &lt;string&gt;#закат #питер #санктпетербург #спб&lt;/string&gt;
+  &lt;string&gt;#спб #питер #облака #троицкиймост&lt;/string&gt;
+  &lt;string&gt;#зубробизон #спб #питер #санктпетербург&lt;/string&gt;
+  &lt;string&gt;#спб #питер #санктпетербург #кот #котэ #котяра&lt;/string&gt;
+  &lt;string&gt;#водопад #около #спб&lt;/string&gt;
+  &lt;string&gt;#спб #питер #санктпетербург&lt;/string&gt;
+  &lt;string&gt;#питер #санктпетербург #спб #петропавловскаякрепость #закат&lt;/string&gt;
+  &lt;string&gt;#музейэмоций #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#солнечные #часы #кронштадт&lt;/string&gt;
+  &lt;string&gt;#мраморныйдворец #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#великийновгород #кораблик #shit #river #clouds&lt;/string&gt;
+  &lt;string&gt;#великийновгород #кремль #трава #крепость #castle&lt;/string&gt;
+  &lt;string&gt;#спб #питер #санктпетербург&lt;/string&gt;
+  &lt;string&gt;#выборг #inception #замок #панорамагорода&lt;/string&gt;
+  &lt;string&gt;#выборг&lt;/string&gt;
+  &lt;string&gt;#панда #крутойпробег #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#санктпетербург #питер #СПб #закат&lt;/string&gt;
+  &lt;string&gt;#иллюзиум #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#хомяк #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#кот #котяра #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#санктпетербург #питер #СПб #зимний #закат&lt;/string&gt;
+  &lt;string&gt;#новыйгод #новыйгод2016 #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#новыйгод #новыйгод2016 #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#звездныевойны #starwars #хансоло #принцессалея #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#зенитчемпион, #зенитваленсия, #дзюбагол #зенит #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#ремонтделотонкое #обожаюхэштеги #давсёхватитуже #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#спб #утро #туман #питер #санктпетербург&lt;/string&gt;
+  &lt;string&gt;#erarta #эрарта #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#erarta #эрарта #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#haloween, #хеллоуин, #spb #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#spb #санктпетербург #питер #СПб #закат&lt;/string&gt;
+  &lt;string&gt;Футбольный вечер удался! #ЗенитЛион , #ЗенитЧемпион #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#океанариум #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#красивый #закат #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#красивый #рассвет #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#мазапарк #лук #mazapark #тридебилаэтосила #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#сладкаяпарочка #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#розовыйслоник #рио #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#зенитчемпион #валенсиязенит #суперхалк #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#surfcoffee #санктпетербург #питер #спб&lt;/string&gt;
+  &lt;string&gt;#санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#крутой #пробег #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#обед #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#минск #красивый #город&lt;/string&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="Total" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">60</Value>
     </Setting>
   </Settings>
 </SettingsFile>

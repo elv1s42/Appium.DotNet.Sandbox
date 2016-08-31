@@ -34,10 +34,84 @@ namespace Appium.Net.Sandbox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"#love #TagsForLikes #TagsForLikesApp #TFLers #tweegram #photooftheday #20likes #amazing #smile #follow4follow #like4like #look #instalike #igers #picoftheday #food #instadaily #instafollow #followme #girl #iphoneonly #instagood #bestoftheday #instacool #instago #all_shots #follow #webstagram #colorful #style #swag")]
+        [global::System.Configuration.DefaultSettingValueAttribute("#love #TagsForLikes #TagsForLikesApp #tweegram #photooftheday #amazing #smile #fo" +
+            "llow4follow #like4like #look #instalike #food #instadaily #instafollow #followme" +
+            " #instagood #bestoftheday #instacool #instago #follow #webstagram #colorful #sty" +
+            "le #swag")]
         public string TempHashs {
             get {
                 return ((string)(this["TempHashs"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
+            "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
+            "tring>#санктпетербург #тучи #закат #небо #спб #питер #saintpetersburg #spb</stri" +
+            "ng>\r\n  <string>#тучи #закат #небо #спб #питер #saintpetersburg #spb</string>\r\n  " +
+            "<string>#футбол #мяч #смешнойхэштег1 #смешнойхэштег2 #спб #питер #санктпетербург" +
+            " #saintpetersburg #spb</string>\r\n  <string>#юсуповский #сад #спб #питер #санктпе" +
+            "тербург #saintpetersburg #spb</string>\r\n  <string>#ботанический #сад #спб #питер" +
+            " #санктпетербург #бонсай #этобонсайничегонезнаю #saintpetersburg #spb</string>\r\n" +
+            "  <string>#андерсенград #сосновыйбор</string>\r\n  <string>#плотина #петяярви #спб" +
+            " #питер #санктпетербург #saintpetersburg #spb</string>\r\n  <string>#закат #питер " +
+            "#санктпетербург #спб #saintpetersburg #spb</string>\r\n  <string>#гатчинский #гейз" +
+            "ер #просто #супер #спб #санктпетербург #питер #saintpetersburg #spb</string>\r\n  " +
+            "<string>#закат #питер #санктпетербург #спб #saintpetersburg #spb</string>\r\n  <st" +
+            "ring>#закат #питер #санктпетербург #спб #saintpetersburg #spb</string>\r\n  <strin" +
+            "g>#спб #питер #лофтпроектэтажи #фестивальенотов #енотики #щенята #енотовидной #с" +
+            "обачки #санктпетербург</string>\r\n  <string>#спб #санктпетербург #питер #бременск" +
+            "иемузыканты</string>\r\n  <string>#закат #питер #санктпетербург #спб</string>\r\n  <" +
+            "string>#спб #питер #облака #троицкиймост</string>\r\n  <string>#зубробизон #спб #п" +
+            "итер #санктпетербург</string>\r\n  <string>#спб #питер #санктпетербург #кот #котэ " +
+            "#котяра</string>\r\n  <string>#водопад #около #спб</string>\r\n  <string>#спб #питер" +
+            " #санктпетербург</string>\r\n  <string>#питер #санктпетербург #спб #петропавловска" +
+            "якрепость #закат</string>\r\n  <string>#музейэмоций #санктпетербург #питер #СПб</s" +
+            "tring>\r\n  <string>#солнечные #часы #кронштадт</string>\r\n  <string>#мраморныйдвор" +
+            "ец #санктпетербург #питер #СПб</string>\r\n  <string>#великийновгород #кораблик #s" +
+            "hit #river #clouds</string>\r\n  <string>#великийновгород #кремль #трава #крепость" +
+            " #castle</string>\r\n  <string>#спб #питер #санктпетербург</string>\r\n  <string>#вы" +
+            "борг #inception #замок #панорамагорода</string>\r\n  <string>#выборг</string>\r\n  <" +
+            "string>#панда #крутойпробег #санктпетербург #питер #СПб</string>\r\n  <string>#сан" +
+            "ктпетербург #питер #СПб #закат</string>\r\n  <string>#иллюзиум #санктпетербург #пи" +
+            "тер #СПб</string>\r\n  <string>#хомяк #санктпетербург #питер #СПб</string>\r\n  <str" +
+            "ing>#санктпетербург #питер #СПб</string>\r\n  <string>#кот #котяра #санктпетербург" +
+            " #питер #СПб</string>\r\n  <string>#санктпетербург #питер #СПб #зимний #закат</str" +
+            "ing>\r\n  <string>#новыйгод #новыйгод2016 #санктпетербург #питер #СПб</string>\r\n  " +
+            "<string>#новыйгод #новыйгод2016 #санктпетербург #питер #СПб</string>\r\n  <string>" +
+            "#звездныевойны #starwars #хансоло #принцессалея #санктпетербург #питер #СПб</str" +
+            "ing>\r\n  <string>#зенитчемпион, #зенитваленсия, #дзюбагол #зенит #санктпетербург " +
+            "#питер #СПб</string>\r\n  <string>#ремонтделотонкое #обожаюхэштеги #давсёхватитуже" +
+            " #санктпетербург #питер #СПб</string>\r\n  <string>#санктпетербург #питер #СПб</st" +
+            "ring>\r\n  <string>#спб #утро #туман #питер #санктпетербург</string>\r\n  <string>#e" +
+            "rarta #эрарта #санктпетербург #питер #СПб</string>\r\n  <string>#erarta #эрарта #с" +
+            "анктпетербург #питер #СПб</string>\r\n  <string>#haloween, #хеллоуин, #spb #санктп" +
+            "етербург #питер #СПб</string>\r\n  <string>#spb #санктпетербург #питер #СПб #закат" +
+            "</string>\r\n  <string>Футбольный вечер удался! #ЗенитЛион , #ЗенитЧемпион #санктп" +
+            "етербург #питер #СПб</string>\r\n  <string>#океанариум #санктпетербург #питер #СПб" +
+            "</string>\r\n  <string>#красивый #закат #санктпетербург #питер #СПб</string>\r\n  <s" +
+            "tring>#красивый #рассвет #санктпетербург #питер #СПб</string>\r\n  <string>#мазапа" +
+            "рк #лук #mazapark #тридебилаэтосила #санктпетербург #питер #СПб</string>\r\n  <str" +
+            "ing>#сладкаяпарочка #санктпетербург #питер #СПб</string>\r\n  <string>#розовыйслон" +
+            "ик #рио #санктпетербург #питер #СПб</string>\r\n  <string>#зенитчемпион #валенсияз" +
+            "енит #суперхалк #санктпетербург #питер #СПб</string>\r\n  <string>#санктпетербург " +
+            "#питер #СПб</string>\r\n  <string>#surfcoffee #санктпетербург #питер #спб</string>" +
+            "\r\n  <string>#санктпетербург #питер #СПб</string>\r\n  <string>#крутой #пробег #сан" +
+            "ктпетербург #питер #СПб</string>\r\n  <string>#обед #санктпетербург #питер #СПб</s" +
+            "tring>\r\n  <string>#минск #красивый #город</string>\r\n</ArrayOfString>")]
+        public global::System.Collections.Specialized.StringCollection Hashs {
+            get {
+                return ((global::System.Collections.Specialized.StringCollection)(this["Hashs"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("60")]
+        public int Total {
+            get {
+                return ((int)(this["Total"]));
             }
         }
     }
