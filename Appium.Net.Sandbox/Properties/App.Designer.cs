@@ -48,6 +48,7 @@ namespace Appium.Net.Sandbox.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
+            "tring>#петропавловскаякрепость #санктпетербург #спб #питер #закат</string>\r\n  <s" +
             "tring>#санктпетербург #тучи #закат #небо #спб #питер #saintpetersburg #spb</stri" +
             "ng>\r\n  <string>#тучи #закат #небо #спб #питер #saintpetersburg #spb</string>\r\n  " +
             "<string>#футбол #мяч #смешнойхэштег1 #смешнойхэштег2 #спб #питер #санктпетербург" +
@@ -108,7 +109,7 @@ namespace Appium.Net.Sandbox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("60")]
+        [global::System.Configuration.DefaultSettingValueAttribute("61")]
         public int Total {
             get {
                 return ((int)(this["Total"]));
