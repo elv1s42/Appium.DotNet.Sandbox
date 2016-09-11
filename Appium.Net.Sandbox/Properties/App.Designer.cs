@@ -48,6 +48,7 @@ namespace Appium.Net.Sandbox.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("<?xml version=\"1.0\" encoding=\"utf-16\"?>\r\n<ArrayOfString xmlns:xsi=\"http://www.w3." +
             "org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\">\r\n  <s" +
+            "tring>#даже #не #знаю #что #написать. #спб #питер #санктпетербург</string>\r\n  <s" +
             "tring>#петропавловскаякрепость #санктпетербург #спб #питер #закат</string>\r\n  <s" +
             "tring>#санктпетербург #тучи #закат #небо #спб #питер #saintpetersburg #spb</stri" +
             "ng>\r\n  <string>#тучи #закат #небо #спб #питер #saintpetersburg #spb</string>\r\n  " +
@@ -109,7 +110,7 @@ namespace Appium.Net.Sandbox.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("61")]
+        [global::System.Configuration.DefaultSettingValueAttribute("62")]
         public int Total {
             get {
                 return ((int)(this["Total"]));
@@ -118,8 +119,8 @@ namespace Appium.Net.Sandbox.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,41,40,39,38,37,36,35,34," +
-            "33,32,31,29,28,27,26,25,24,20,19,18,17,15,14,13,12,11,9,8,6,5,4,3,1")]
+        [global::System.Configuration.DefaultSettingValueAttribute("62,61,60,59,58,57,56,55,54,53,52,51,50,49,48,47,46,45,44,43,41,40,39,38,37,36,35," +
+            "34,33,32,31,29,28,27,26,25,24,20,19,18,17,15,14,13,12,11,9,8,6,5,4,3,1")]
         public string IdsToUpdate {
             get {
                 return ((string)(this["IdsToUpdate"]));
