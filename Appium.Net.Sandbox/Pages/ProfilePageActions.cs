@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 using Appium.Net.Sandbox.Utils;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
@@ -21,6 +22,35 @@ namespace Appium.Net.Sandbox.Pages
             {
                 ((AndroidDriver<AppiumWebElement>)d).Swipe(100, 750, 100, 100, 1000);
             });
+        }
+
+        public static RemoteWebDriver UpdateHashs(this RemoteWebDriver d, int number)
+        {
+            d.OpenProfile();
+            for (var i = 0; i < number; i++)
+            {
+                var row = 1 + i / 3;
+                var column = 1 + i % 3;
+                var id = Properties.App.Default.Total - (column - 1 + (row - 1) * 3);
+                if (Properties.App.Default.IdsToUpdate.Split(',')
+                    .Select(x => Convert.ToInt32(x)).Contains(id))
+                {
+                    Console.WriteLine("id = " + id);
+                    string hashs;
+                    d.OpenPhoto(row, column)
+                 .EditPhoto()
+                 .ClearHashtags(out hashs)
+                 .SaveEditing()
+                 .GoBack()
+                 .OpenPhoto(row, column)
+                 .EditPhoto()
+                 .SetHashtags(hashs, "", column - 1 + (row - 1) * 3)
+                 .SaveEditing()
+                 .GoBack();
+                }
+            }
+            
+            return d;
         }
     }
 }

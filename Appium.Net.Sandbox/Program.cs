@@ -38,6 +38,13 @@ namespace Appium.Net.Sandbox
             }
         }
 
+        private static void NewResetHashs()
+        {
+            Write("Enter number to udpate:");
+            var number = ReadInt();
+            MainRunner.ResetAllHashs(number);
+        }
+
         private static void AddTemplateHashs()
         {
             Write("Enter number to udpate:");
@@ -84,6 +91,7 @@ namespace Appium.Net.Sandbox
                 Write("1 - simple reset hashsets");
                 Write("2 - add template hashsets");
                 Write("3 - remove template hashsets");
+                Write("4 - new reset hashsets");
                 var option = Read() ?? "1";
                 switch (option)
                 {
@@ -100,6 +108,11 @@ namespace Appium.Net.Sandbox
                     case "3":
                     {
                         RemoveTemplateHashs();
+                        break;
+                    }
+                    case "4":
+                    {
+                        NewResetHashs();
                         break;
                     }
                     default:

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Appium.Net.Sandbox.Pages;
 using Appium.Net.Sandbox.Utils;
 using OpenQA.Selenium.Appium;
@@ -39,6 +40,22 @@ namespace Appium.Net.Sandbox
         public static void End()
         {
             Driver.Dispose();
+        }
+
+        public static void ResetAllHashs(int number)
+        {
+            try
+            {
+                SetUp();
+                Driver.UpdateHashs(number);
+                End();
+            }
+            catch (Exception e)
+            {
+                ConsoleLogger.Message("Error for Resetting hashs!!!");
+                ConsoleLogger.Message(e.Message);
+                ConsoleLogger.Message(e.StackTrace);
+            }
         }
 
         public static void ResetAllHashs(int row, int column)
