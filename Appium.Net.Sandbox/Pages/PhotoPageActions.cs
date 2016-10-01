@@ -48,16 +48,16 @@ namespace Appium.Net.Sandbox.Pages
             hashs = "";
             while ((hashs == "" || hashs.Contains("Write a caption")) && retry < 10)
             {
+                retry++;
                 var t = d.FindElement(By.Id("com.instagram.android:id/edit_media_caption"))
                        .Text;
                 hashs = t;
-                retry++;
             }
 
             return d.DefaultAction($"Clearing hashtags: '{hashs}' ...", () =>
             {
                 d.FindElement(By.Id("com.instagram.android:id/edit_media_caption")).Clear();
-            });
+            }, "", 5);
         }
         
         public static RemoteWebDriver SetHashtags(this RemoteWebDriver d, string hashs, string tempHashs = "", int number = 0)

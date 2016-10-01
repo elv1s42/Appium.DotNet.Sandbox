@@ -11,6 +11,7 @@ namespace Appium.Net.Sandbox.Utils
             var c = 0;
             while (c < retry)
             {
+                c++;
                 try
                 {
                     ConsoleLogger.Start(msg1);
@@ -20,7 +21,6 @@ namespace Appium.Net.Sandbox.Utils
                 }
                 catch
                 {
-                    c++;
                     retryAction?.Invoke();
                 }
             }
