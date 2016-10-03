@@ -74,7 +74,7 @@ namespace Appium.Net.Sandbox.Properties {
             "ербург</string>\r\n  <string>#питер #санктпетербург #спб #петропавловскаякрепость " +
             "#закат</string>\r\n  <string>#музейэмоций #санктпетербург #питер #СПб</string>\r\n  " +
             "<string>#солнечные #часы #кронштадт</string>\r\n  <string>#мраморныйдворец #санктп" +
-            "етербург #питер #СПб</string>\r\n  <string>#великийновгород #кораблик #shit #river" +
+            "етербург #питер #СПб</string>\r\n  <string>#великийновгород #кораблик #ship #river" +
             " #clouds</string>\r\n  <string>#великийновгород #кремль #трава #крепость #castle</" +
             "string>\r\n  <string>#спб #питер #санктпетербург</string>\r\n  <string>#выборг #ince" +
             "ption #замок #панорамагорода</string>\r\n  <string>#выборг</string>\r\n  <string>#па" +
