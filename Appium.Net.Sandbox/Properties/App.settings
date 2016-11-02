@@ -11,6 +11,7 @@
     <Setting Name="Hashs" Type="System.Collections.Specialized.StringCollection" Scope="Application">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;#uk #london #animalsinwar #memorial #parklane&lt;/string&gt;
   &lt;string&gt;#bigben #london #uk #westminster #palaceofwestminster #londonisthecapitalofgreatbritain&lt;/string&gt;
   &lt;string&gt;#london #uk #buckinghampalace #londonisthecapitalofgreatbritain&lt;/string&gt;
   &lt;string&gt;#saintpetersburg #spb #bridge #saintpeterandpaulcathedral #sunset&lt;/string&gt;
@@ -81,10 +82,10 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="Total" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">67</Value>
+      <Value Profile="(Default)">68</Value>
     </Setting>
     <Setting Name="IdsToUpdate" Type="System.String" Scope="User">
-      <Value Profile="(Default)">67,66,65,64,63,62,61,60,59,58,57,56,54,53,52,51,50,49,48,47,46,45,44,43,41,40,39,38,37,36,35,34,33,32,31,29,28,27,26,25,24,20,19,18,17,15,14,13,12,11,9,8,6,5,4,3,1</Value>
+      <Value Profile="(Default)">68,67,66,65,64,63,62,61,60,59,58,57,56,54,53,52,51,50,49,48,47,46,45,44,43,41,40,39,38,37,36,35,34,33,32,31,29,28,27,26,25,24,20,19,18,17,15,14,13,12,11,9,8,6,5,4,3,1</Value>
     </Setting>
   </Settings>
 </SettingsFile>
