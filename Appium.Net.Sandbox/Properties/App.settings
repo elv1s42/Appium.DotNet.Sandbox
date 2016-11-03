@@ -11,6 +11,7 @@
     <Setting Name="Hashs" Type="System.Collections.Specialized.StringCollection" Scope="Application">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string&gt;#chinatown #london #uk #greatbritain #londonisthecapitalofgreatbritain&lt;/string&gt;
   &lt;string&gt;#sherlock #holmes #museum #uk #london #greatbritain&lt;/string&gt;
   &lt;string&gt;#uk #london #animalsinwar #memorial #parklane&lt;/string&gt;
   &lt;string&gt;#bigben #london #uk #westminster #palaceofwestminster #londonisthecapitalofgreatbritain&lt;/string&gt;
@@ -18,8 +19,8 @@
   &lt;string&gt;#saintpetersburg #spb #bridge #saintpeterandpaulcathedral #sunset&lt;/string&gt;
   &lt;string&gt;#plane #fly #spb #saintpetersburg #russia #clouds&lt;/string&gt;
   &lt;string&gt;#london #greatbritain #redbus #bus #unitedkingdom #uk&lt;/string&gt;
-  &lt;string&gt;#даже #не #знаю #что #написать. #спб #питер #санктпетербург&lt;/string&gt;
-  &lt;string&gt;#петропавловскаякрепость #санктпетербург #спб #питер #закат&lt;/string&gt;
+  &lt;string&gt;#даже #не #знаю #что #написать. #спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#петропавловскаякрепость #санктпетербург #спб #питер #закат #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#санктпетербург #тучи #закат #небо #спб #питер #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#тучи #закат #небо #спб #питер #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#футбол #мяч #смешнойхэштег1 #смешнойхэштег2 #спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
@@ -33,24 +34,24 @@
   &lt;string&gt;#закат #питер #санктпетербург #спб #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#спб #питер #лофтпроектэтажи #фестивальенотов #енотики #щенята #енотовидной #собачки #санктпетербург&lt;/string&gt;
   &lt;string&gt;#спб #санктпетербург #питер #бременскиемузыканты&lt;/string&gt;
-  &lt;string&gt;#закат #питер #санктпетербург #спб&lt;/string&gt;
-  &lt;string&gt;#спб #питер #облака #троицкиймост&lt;/string&gt;
-  &lt;string&gt;#зубробизон #спб #питер #санктпетербург&lt;/string&gt;
-  &lt;string&gt;#спб #питер #санктпетербург #кот #котэ #котяра&lt;/string&gt;
-  &lt;string&gt;#водопад #около #спб&lt;/string&gt;
-  &lt;string&gt;#спб #питер #санктпетербург&lt;/string&gt;
-  &lt;string&gt;#питер #санктпетербург #спб #петропавловскаякрепость #закат&lt;/string&gt;
-  &lt;string&gt;#музейэмоций #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#закат #питер #санктпетербург #спб #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#спб #питер #облака #троицкиймост #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#зубробизон #спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#спб #питер #санктпетербург #кот #котэ #котяра #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#водопад #около #спб #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#питер #санктпетербург #спб #петропавловскаякрепость #закат #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#музейэмоций #санктпетербург #питер #СПб #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#солнечные #часы #кронштадт&lt;/string&gt;
-  &lt;string&gt;#мраморныйдворец #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#мраморныйдворец #санктпетербург #питер #СПб #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#великийновгород #кораблик #ship #river #clouds&lt;/string&gt;
   &lt;string&gt;#великийновгород #кремль #трава #крепость #castle&lt;/string&gt;
-  &lt;string&gt;#спб #питер #санктпетербург&lt;/string&gt;
+  &lt;string&gt;#спб #питер #санктпетербург #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#выборг #inception #замок #панорамагорода&lt;/string&gt;
   &lt;string&gt;#выборг&lt;/string&gt;
-  &lt;string&gt;#панда #крутойпробег #санктпетербург #питер #СПб&lt;/string&gt;
-  &lt;string&gt;#санктпетербург #питер #СПб #закат&lt;/string&gt;
-  &lt;string&gt;#иллюзиум #санктпетербург #питер #СПб&lt;/string&gt;
+  &lt;string&gt;#панда #крутойпробег #санктпетербург #питер #СПб #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#санктпетербург #питер #СПб #закат #saintpetersburg #spb&lt;/string&gt;
+  &lt;string&gt;#иллюзиум #санктпетербург #питер #СПб #saintpetersburg #spb&lt;/string&gt;
   &lt;string&gt;#хомяк #санктпетербург #питер #СПб&lt;/string&gt;
   &lt;string&gt;#санктпетербург #питер #СПб&lt;/string&gt;
   &lt;string&gt;#кот #котяра #санктпетербург #питер #СПб&lt;/string&gt;
@@ -83,10 +84,10 @@
 &lt;/ArrayOfString&gt;</Value>
     </Setting>
     <Setting Name="Total" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">69</Value>
+      <Value Profile="(Default)">70</Value>
     </Setting>
     <Setting Name="IdsToUpdate" Type="System.String" Scope="User">
-      <Value Profile="(Default)">69,68,67,66,65,64,63,62,61,60,59,58,57,56,54,53,52,51,50,49,48,47,46,45,44,43,41,40,39,38,37,36,35,34,33,32,31,29,28,27,26,25,24,20,19,18,17,15,14,13,12,11,9,8,6,5,4,3,1</Value>
+      <Value Profile="(Default)">70,69,68,67,66,65,64,63,62,61,60,59,58,57,56,54,53,52,51,50,49,48,47,46,45,44,43,41,40,39,38,37,36,35,34,33,32,31,29,28,27,26,25,24,20,19,18,17,15,14,13,12,11,9,8,6,5,4,3,1</Value>
     </Setting>
   </Settings>
 </SettingsFile>
